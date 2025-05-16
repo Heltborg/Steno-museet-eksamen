@@ -1,4 +1,4 @@
-/* CSS Reset */
+/* ------------------------------------------------ CSS reset ------------------------------------------------ */
 *,
 *::after,
 *::before {
@@ -43,9 +43,16 @@ table {
 
 /* ------------------------------------------------ Min css starter ------------------------------------------------ */
 
+/* ------------------------------------------------ Gennemgående styling ------------------------------------------------ */
+body {
+  font-family: nunito;
+  font-size: 12px;
+  background-color: black;
+}
+
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 /* -- containeren for alt indhold -- */
@@ -59,9 +66,31 @@ a {
 h1 {
   font-family: kalam;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 2.5rem;
   color: black;
   text-align: center;
+}
+
+/* -- containeren til knappen -- */
+.knap_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -- styling af selve knappen -- */
+.knap {
+  background-color: #ffcd92;
+  border-radius: 30px;
+  margin: 20px auto; /* -- centrerer knappen vandret -- */
+  padding: 5px 60px; /* -- luft omkring teksten -- */
+  font-size: 27px;
+  font-weight: 300;
+  font-family: nunito;
+}
+
+#bjaelke {
+  width: 60px;
 }
 
 /* ------------------------------------------------ Forside ------------------------------------------------ */
@@ -70,8 +99,7 @@ h1 {
 }
 
 .forside_tekst {
-  font-family: nunito;
-  font-size: 12px;
+  font-size: 1rem;
   padding: 20px 60px 0px 60px; /* top, højre, bund, venstre */
 }
 
@@ -89,4 +117,36 @@ h1 {
   max-height: 400px;
   width: 100%;
   object-fit: contain; /* Sørger for at billedet ikke strækkes */
+}
+
+/* ------------------------------------------------ Media query ------------------------------------------------ */
+@media (min-width: 1900px) {
+  /* ------------------------------------------------ Gennemgående styling ------------------------------------------------ */
+  .indhold {
+    height: 100vh;
+    width: calc(100vh * 9 / 16); /* -- beregner bredden ved at gange 100vh med forholdet 9:16 (den ratio skærmen skal have) = 56.25vw -- */
+  }
+
+  .knap {
+    border-radius: 3rem;
+    margin: 2.5rem auto; /* -- centrerer knappen vandret -- */
+    padding: 0.5rem 6rem; /* -- luft omkring teksten -- */
+    font-size: 2rem;
+  }
+
+  /* ------------------------------------------------ Forside ------------------------------------------------ */
+  #karakterer {
+    max-height: 100rem;
+  }
+
+  /* prettier-ignore */
+  #pige_forside, #dreng_forside {
+    max-height: 70rem;
+    width: 100%;
+    object-fit: contain; /* Sørger for at billedet ikke strækkes */
+  }
+
+  #pige_forside {
+    padding-top: 1rem;
+  }
 }
