@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angst udstilling - STENO</title>
+    <!-- Connected til CSS og Javascript -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/karakter.js" defer></script>
+    <script src="js/afbryd.js" defer></script>
+    <!-- Connected til Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kalam:wght@300;400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <!-- Selve indholdet -->
+      <div class="indhold">
+        <!-- Navigation -->
+        <nav class="navigation">
+          <!-- Bjælkerne -->
+          <div class="bjaelker">
+            <img src="img/ikoner/bjaelke_graa.png" alt="Nuværende trin" class="bjaelke" />
+            <img src="img/ikoner/bjaelke_hvid.png" alt="Kommende trin" class="bjaelke" />
+            <img src="img/ikoner/bjaelke_hvid.png" alt="Kommende trin" class="bjaelke" />
+            <img src="img/ikoner/bjaelke_hvid.png" alt="Kommende trin" class="bjaelke" />
+            <img src="img/ikoner/bjaelke_hvid.png" alt="Kommende trin" class="bjaelke" />
+            <img src="img/ikoner/bjaelke_hvid.png" alt="Kommende trin" class="bjaelke" />
+            <img src="img/ikoner/bjaelke_hvid.png" alt="Kommende trin" class="bjaelke" />
+            <img src="img/ikoner/bjaelke_hvid.png" alt="Kommende trin" class="bjaelke" />
+            <img src="img/ikoner/bjaelke_hvid.png" alt="Kommende trin" class="bjaelke" />
+          </div>
+
+          <!-- Kryds -->
+          <div class="ikoner">
+            <img src="img/ikoner/kryds.png" alt="Kryds" class="kryds" />
+          </div>
+        </nav>
+
+        <!-- Tekst sektion -->
+        <section>
+          <h1 id="karakter_overskrift">VÆLG DIN KARAKTER</h1>
+          <p id="karakter_broedtekst">Lær angst at kende gennem din karakter</p>
+        </section>
+
+        <!-- Vælg karakter -->
+        <div id="billedramme_container">
+          <img src="img/ikoner/pil_venstre.png" alt="Venstre pil" class="pil" id="venstre" />
+
+          <div class="billedramme">
+            <img src="img/pige_halv.gif" alt="Pige" id="karakterbillede" />
+          </div>
+
+          <img src="img/ikoner/pil_hoejre.png" alt="Højre pil" class="pil" id="hoejre" />
+        </div>
+
+        <!-- Knap -->
+        <div class="knap_wrapper">
+          <a class="knap" href="video.html">VÆLG</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
