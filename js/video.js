@@ -1,14 +1,26 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const video = document.querySelector(".video");
-  const replayBtn = document.querySelector(".replay_knap");
+// Variable
+const video = document.querySelector(".video"); // video
+const replayBtn = document.getElementById("replay_knap"); // genafspil
+const play = document.getElementById("play"); // play knap
 
-  video.addEventListener("ended", function () {
-    replayBtn.style.display = "block";
-  });
+// Event listener
+video.addEventListener("ended", pilFrem);
+replayBtn.addEventListener("click", genafspil);
+play.addEventListener("click", start);
 
-  replayBtn.addEventListener("click", function () {
-    video.currentTime = 0;
-    video.play();
-    replayBtn.style.display = "none";
-  });
-});
+// Funktion
+function pilFrem() {
+  replayBtn.style.display = "block"; // Genafspil knappen bliver vist
+}
+
+function genafspil() {
+  video.currentTime = 0; // Videoen starter fra sekund 0
+  video.play(); // Videoen afspilles
+  replayBtn.style.display = "none"; // skjuler genafspil pil
+}
+
+function start() {
+  video.currentTime = 0; // Videoen starter fra sekund 0
+  video.play(); // Videoen afspilles
+  play.style.display = "none"; // skjuler pil
+}

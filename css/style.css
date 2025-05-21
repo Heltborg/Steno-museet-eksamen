@@ -239,19 +239,24 @@ li {
   border-radius: 10px;
 }
 
-.replay_knap {
+/* -- genafspilnings knap -- */
+#replay_knap {
   position: absolute;
   display: none;
-  background-color: #ffcd92;
-  border-radius: 30px;
-  padding: 10px 40px;
-  font-size: 20px;
-  font-family: nunito;
-  border: none;
-  margin-top: 150px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 30%;
+  margin-top: 140px;
+  z-index: 2;
 }
 
+#play {
+  position: absolute;
+  display: block;
+  width: 30%;
+  margin-top: 140px;
+  z-index: 2;
+}
+
+/* -- videre knappen -- */
 #video_knap {
   margin-top: 150px;
 }
@@ -371,7 +376,7 @@ li {
   margin: -50px 0 0 0;
 }
 
-#hurtig_video {
+.opgave_video {
   width: 140%;
   margin-top: -60px; /* -- rykker videoen op -- */
 }
@@ -388,7 +393,7 @@ li {
   width: 80%;
 }
 
-#flot_knap{
+#flot_knap {
   margin-top: 70px;
   padding: 5px 50px; /* -- luft omkring teksten -- */
 }
