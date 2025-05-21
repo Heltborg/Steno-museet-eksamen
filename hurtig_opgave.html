@@ -26,42 +26,34 @@
             <img src="img/ikoner/bjaelke_graa.png" alt="Tidligere trin" class="bjaelke" />
             <img src="img/ikoner/bjaelke_graa.png" alt="Tidligere trin" class="bjaelke" />
             <img src="img/ikoner/bjaelke_graa.png" alt="Tidligere trin" class="bjaelke" />
-            <img src="img/ikoner/bjaelke_graa.png" alt="Nuværende trin" class="bjaelke" />
-            <img src="img/ikoner/bjaelke_hvid.png" alt="Kommende trin" class="bjaelke" />
-            <img src="img/ikoner/bjaelke_hvid.png" alt="Kommende trin" class="bjaelke" />
+            <img src="img/ikoner/bjaelke_graa.png" alt="Tidligere trin" class="bjaelke" />
+            <img src="img/ikoner/bjaelke_graa.png" alt="Tidligere trin" class="bjaelke" />
+            <img src="img/ikoner/bjaelke_hvid.png" alt="Nuværende trin" class="bjaelke" />
             <img src="img/ikoner/bjaelke_hvid.png" alt="Kommende trin" class="bjaelke" />
             <img src="img/ikoner/bjaelke_hvid.png" alt="Kommende trin" class="bjaelke" />
           </div>
           <!-- Ikoner -->
           <div class="ikoner">
-            <a href="info.html" class="tilbage"><img src="img/ikoner/tilbage.png" alt="Tilbage" /></a>
+            <a href="hurtig_info.html" class="tilbage"><img src="img/ikoner/tilbage.png" alt="Tilbage" /></a>
             <a href="index.html" class="kryds"><img src="img/ikoner/kryds.png" alt="Kryds" /></a>
           </div>
         </nav>
 
-        <!-- tekst -->
-        <h1>HURTIG VEJRTRÆKNING</h1>
-
-        <!-- cirkel -->
-        <a href="hurtig_opgave.html">
-          <div class="cirkel">
-            <p class="cirkel_tekst">KLIK HER FOR AT STARTE ØVELSEN</p>
-          </div>
-        </a>
-
-        <!-- tekst info -->
-        <section class="tekstboks_opgave">
-          <h2>Sådan laver du øvelsen</h2>
-          <p>
-            Følg rytmes på skærmen: <br />
-            Ind - Ud - Ind - Ud...
-          </p>
-          <ul>
-            <li>Øvelsen varer ca. 15 sekunder</li>
-            <li>Det kan godt føles lidt ubehageligt – måske mærker du lidt uro. Men det er helt ufarligt og går hurtigt over igen</li>
-          </ul>
-          <p>Formålet er, at du lærer at genkende kroppens signaler</p>
+        <!-- Tekst sektion -->
+        <section class="ovelse_tekst">
+          <h1 id="karakter_overskrift">HURTIG VEJRTRÆKNING</h1>
+          <p class="broedtekst">Følg rytmen på skærmen og mærk hvordan kroppen reagerer</p>
         </section>
+
+        <!-- Video -->
+        <section id="video_container">
+          <video src="mov/hurtig.mp4" autoplay id="hurtig_video"></video>
+        </section>
+
+        <!-- Knap -->
+        <div class="knap_wrapper" id="ovelse_knap">
+          <a class="knap" id="opgave_knap" href="langsom_info.html">NÆSTE ØVELSE</a>
+        </div>
       </div>
     </main>
   </body>
