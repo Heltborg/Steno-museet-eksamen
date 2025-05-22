@@ -1,6 +1,6 @@
 // Variable: Find videoen
 const video = document.querySelector(".opgave_video");
-const side = window.location.pathname;
+const side = window.location.pathname; // MANGLER KOMMENTAR
 
 // Funktion der forsinker videoafspilning
 function delayVideoStart() {
